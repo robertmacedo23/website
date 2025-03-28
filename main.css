@@ -1,0 +1,52 @@
+:root {
+    --green: #00ff00;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+* {
+    font-family: helvetica, sans-serif;
+}
+
+/* Tema claro */
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontcolor: var(--white);
+}
+
+/* Tema escuro */
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontcolor: var(--black);
+}
+
+/* Estilo do corpo */
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+     background: 0.3s ease, color 0.3s ease; 
+}
+
+/* Estilo para o botão */
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontcolor);
+    background-color: var(--btnBg);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
